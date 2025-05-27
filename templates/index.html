@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediksi Tanaman</title>
+</head>
+<body>
+    <h1>Upload Gambar Tanaman</h1>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        <input type="file" name="my_image" required>
+        <input type="submit" value="Prediksi">
+    </form>
+
+    {% if prediction %}
+    <h2>Hasil Prediksi: {{ prediction }} ({{ confidence|round(2) }}%)</h2>
+    <img src="{{ img_path }}" alt="Gambar yang diunggah" width="300">
+    {% endif %}
+</body>
+</html>

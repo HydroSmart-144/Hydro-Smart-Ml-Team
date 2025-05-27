@@ -1,0 +1,14 @@
+env/
+__pycache__/
+*.pyc
+*.h5
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.DS_Store
+*.sqlite3
+*.db
+*.log
+.vscode/
+.idea/
